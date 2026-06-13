@@ -145,21 +145,21 @@ An AI-assisted traffic-control system that pre-screens road snapshots for animal
 <table width="100%">
 <tr><td width="850">
 
-### Eye Image Segmentation
+### Digital Image Processing — Classical CV
 
-`Solo` · `Classical CV`
+`Solo` · `Classical CV (no DL)`
 
-Pupil & eye-region detection using **classical image processing only** (no deep learning allowed) — a counterpoint showing I understand the fundamentals beneath modern detectors.
+Two vision tasks solved with **classical image processing only** — a counterpoint showing I understand the fundamentals beneath modern detectors.
 
-**My role** — Built the full classical-CV pipeline solo.
+**My role** — Built both pipelines solo.
 
-- Contrast normalization → threshold → morphology (closing/dilation) → contour filtering → **multi-radius circular template matching** for pupil center
-- Per-eye localization across IR/RGB/Depth modalities; evaluated by match-rate within 5 px
+- **Eye Image Segmentation** — pupil-center detection via threshold → morphology → multi-radius circular template matching (IR/RGB/Depth)
+- **Pathology Slide Classification** — normal vs cancer-suspected patches via hand-engineered features (tissue ratio, morphological irregularity, local density) + rule classifier
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
 
-**[Details →](projects/eye-image-segmentation.md)**
+**[Details →](projects/digital-image-processing.md)**
 
 </td></tr>
 </table>
