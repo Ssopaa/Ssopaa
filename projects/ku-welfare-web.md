@@ -1,6 +1,6 @@
 # KU Welfare Web — Rental & Printing Portal
 
-> Jan 2026 – Present · **Frontend** · Team of 2 · Live in production
+> Jan 2026 – Present · **PM + Frontend** · Team of 2 · Live in production
 > [Live](https://ku-welfare-web.vercel.app/) · [Repository](https://github.com/41-Welfare-Web/KU_WelfareWeb_FrontEnd)
 
 ## Overview
@@ -21,7 +21,7 @@ A React 19 + Vite single-page app, styled with TailwindCSS 4, talking to the wel
 
 ## My role
 
-Frontend architecture, implementation, and Vercel deployment (2-person team).
+Project planning (PM), frontend architecture & implementation, Vercel deployment, and ongoing maintenance/operations (2-person team). The service is live and actively maintained.
 
 ## Tech stack
 

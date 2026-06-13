@@ -167,11 +167,11 @@ Pupil & eye-region detection using **classical image processing only** (no deep 
 
 ### KU Welfare Web — Rental & Printing Portal
 
-`Live Service` · `Frontend` · `Team of 2`
+`Live Service` · `PM + Frontend` · `Team of 2`
 
 The official portal of Konkuk University's Student Welfare Committee, digitalizing campus rental and printing operations. Currently live in production.
 
-**My role** — Frontend architecture, implementation, and Vercel deployment.
+**My role** — Project planning (PM), frontend architecture & implementation, deployment, and ongoing maintenance/operations.
 
 - Digitalized rental & printing workflows, drastically reducing administrative overhead
 
