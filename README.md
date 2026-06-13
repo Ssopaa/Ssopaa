@@ -13,11 +13,11 @@
 
 ## About Me
 
-- B.S. in Computer Science, **Konkuk University** (GPA 3.93 / 4.5)
-- Research Intern @ **AI & Mobile Lab** — deep learning for wireless communication
-- Co-authored a paper on **NN-based image transmission over MIMO channels** (KICS 2026)
-- **3× Grand Prize** in AI / development competitions
-- Interests — **Computer Vision · Deep Learning · ML Systems**
+- 🔭 Currently building **INPOSE** — an AI CRM for personalized job-posting & feed recommendation (capstone)
+- 🌱 Currently learning **MLOps** and recommendation systems
+- 💬 Ask me about **Computer Vision, YOLO, CLIP, and ML pipelines**
+- 📫 Reach me at **lysopa@naver.com**
+- ⚡ Fun fact — served as a **satellite communications operator** in the ROK Army
 
 ---
 
