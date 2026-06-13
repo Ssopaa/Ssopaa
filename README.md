@@ -120,6 +120,51 @@ A defense-reconnaissance AI that detects camouflaged/occluded military targets (
 <table width="100%">
 <tr><td width="850">
 
+### Roadkill Detection Assist System
+
+`Team (AI role)` · `Agentic dev`
+
+An AI-assisted traffic-control system that pre-screens road snapshots for animals/carcasses so operators only review images that need a human decision. Built through a controlled agentic-AI workflow.
+
+**My role** — Owned the AI pipeline: YOLOv8 training on 67,275 images (3 classes), a data-existence verification gate, a two-stage confidence threshold (0.3 detect / 0.6 alert), and the inference→webhook alert pipeline.
+
+- Validation **mAP@50 0.994**; honest external test (12 imgs) → precision 1.0, recall 0.67
+- Rejected the LLM's single-threshold design for a two-stage detect/alert split tuned on held-out data
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![YOLOv8](https://img.shields.io/badge/YOLOv8-00FFFF?style=flat-square&logo=yolo&logoColor=black)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+
+**[Details →](projects/roadkill-detection.md)**
+
+</td></tr>
+</table>
+
+<table width="100%">
+<tr><td width="850">
+
+### Eye Image Segmentation
+
+`Solo` · `Classical CV`
+
+Pupil & eye-region detection using **classical image processing only** (no deep learning allowed) — a counterpoint showing I understand the fundamentals beneath modern detectors.
+
+**My role** — Built the full classical-CV pipeline solo.
+
+- Contrast normalization → threshold → morphology (closing/dilation) → contour filtering → **multi-radius circular template matching** for pupil center
+- Per-eye localization across IR/RGB/Depth modalities; evaluated by match-rate within 5 px
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
+
+**[Details →](projects/eye-image-segmentation.md)**
+
+</td></tr>
+</table>
+
+<table width="100%">
+<tr><td width="850">
+
 ### CampusForm — Club Recruitment Platform
 
 `Grand Prize` · `Frontend` · `Team`
