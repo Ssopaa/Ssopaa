@@ -47,9 +47,9 @@ Computer Science Undergraduate · GPA **3.93 / 4.5**
 
 ### INPOSE — AI-Driven Matching & CRM System
 
-`Capstone` · `Solo`
+`Capstone` · `Solo` · `In production`
 
-An AI CRM for the social-matching service *Inpose* — it automatically clusters feed images by visual semantics and learns each user's behavior to power personalized **job-posting and feed recommendations**.
+An AI CRM built into the live social-matching service [**Inpose**](https://inpose.co/) — it automatically clusters feed images by visual semantics and learns each user's behavior to power personalized **job-posting and feed recommendations**.
 
 **My role** — Designed and built the entire ML pipeline single-handedly: embedding extraction, clustering, inference server, user-affinity module, and production deployment.
 
@@ -63,6 +63,8 @@ An AI CRM for the social-matching service *Inpose* — it automatically clusters
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
+&nbsp;
+[![Service](https://img.shields.io/badge/Service-inpose.co-2F81F7?style=flat-square&logo=googlechrome&logoColor=white)](https://inpose.co/)
 
 **[Details →](projects/inpose.md)**
 

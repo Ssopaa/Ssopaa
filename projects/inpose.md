@@ -1,11 +1,11 @@
 # INPOSE — AI-Driven Matching & CRM System
 
-> Capstone project (Mar 2026 – Dec 2026) · **Solo**
+> Capstone project (Mar 2026 – Dec 2026) · **Solo** · Live service: [inpose.co](https://inpose.co/)
 > Production ML pipeline for semantic feed clustering and behavior-based recommendation.
 
 ## Overview
 
-INPOSE is the AI CRM behind the social-matching service *Inpose*. The feed contains hundreds of thousands of user-posted images with no semantic labels. INPOSE automatically groups them into meaningful clusters by **visual semantics** (style, subject, composition), then learns each user's interaction history to model their taste.
+INPOSE is the AI CRM behind the live social-matching service [*Inpose*](https://inpose.co/). The feed contains hundreds of thousands of user-posted images with no semantic labels. INPOSE automatically groups them into meaningful clusters by **visual semantics** (style, subject, composition), then learns each user's interaction history to model their taste.
 
 The **end goal** is personalized recommendation on two surfaces: **job/recruitment posts** and the **image feed** — surfacing the postings and feeds that best match each user's inferred preferences.
 
