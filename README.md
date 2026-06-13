@@ -182,7 +182,7 @@ The official portal of Konkuk University's Student Welfare Committee, digitalizi
 ![Vite](https://img.shields.io/badge/Vite-646CFF?style=flat-square&logo=vite&logoColor=white)
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
 &nbsp;
-[![Live](https://img.shields.io/badge/Live-Demo-000000?style=flat-square&logo=vercel)](https://ku-welfare-web.vercel.app/)
+[![Live](https://img.shields.io/badge/Live-ku--welfare--web.vercel.app-000000?style=flat-square&logo=vercel)](https://ku-welfare-web.vercel.app/)
 [![Repo](https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github)](https://github.com/41-Welfare-Web/KU_WelfareWeb_FrontEnd)
 
 **[Details →](projects/ku-welfare-web.md)**
