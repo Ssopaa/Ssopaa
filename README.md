@@ -165,31 +165,6 @@ Pupil & eye-region detection using **classical image processing only** (no deep 
 <table width="100%">
 <tr><td width="850">
 
-### CampusForm — Club Recruitment Platform
-
-`Grand Prize` · `Frontend` · `Team`
-
-An all-in-one recruitment web app that handles application collection, pass/fail management, bulk SMS, and interview scheduling in one place. Grand Prize at Kuit 6th Demoday.
-
-**My role** — Frontend developer: built the Home / My / Manage / Notification pages and implemented & integrated the **smart scheduling** feature.
-
-- **Smart interview scheduling** with automated time-slot recommendation and applicant self-adjustment
-
-![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
-![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
-![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
-&nbsp;
-[![Repo](https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github)](https://github.com/Konkuk-KUIT/CAMPUSFORM-Web)
-
-**[Details →](projects/campusform.md)**
-
-</td></tr>
-</table>
-
-<table width="100%">
-<tr><td width="850">
-
 ### KU Welfare Web — Rental & Printing Portal
 
 `Live Service` · `Frontend` · `Team of 2`
@@ -209,6 +184,31 @@ The official portal of Konkuk University's Student Welfare Committee, digitalizi
 [![Repo](https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github)](https://github.com/41-Welfare-Web/KU_WelfareWeb_FrontEnd)
 
 **[Details →](projects/ku-welfare-web.md)**
+
+</td></tr>
+</table>
+
+<table width="100%">
+<tr><td width="850">
+
+### CampusForm — Club Recruitment Platform
+
+`Grand Prize` · `Frontend` · `Team`
+
+An all-in-one recruitment web app that handles application collection, pass/fail management, bulk SMS, and interview scheduling in one place. Grand Prize at Kuit 6th Demoday.
+
+**My role** — Frontend developer: built the Home / My / Manage / Notification pages and implemented & integrated the **smart scheduling** feature.
+
+- **Smart interview scheduling** with automated time-slot recommendation and applicant self-adjustment
+
+![Next.js](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
+![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
+&nbsp;
+[![Repo](https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github)](https://github.com/Konkuk-KUIT/CAMPUSFORM-Web)
+
+**[Details →](projects/campusform.md)**
 
 </td></tr>
 </table>
