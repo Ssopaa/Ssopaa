@@ -13,11 +13,11 @@
 
 ## About Me
 
-- 🔭 Currently building **INPOSE** — an AI CRM for personalized job-posting & feed recommendation (capstone)
-- 🌱 Currently learning **MLOps** and recommendation systems
-- 💬 Ask me about **Computer Vision, YOLO, CLIP, and ML pipelines**
-- 📫 Reach me at **lysopa@naver.com**
-- ⚡ Fun fact — served as a **satellite communications operator** in the ROK Army
+Computer Science Undergraduate · GPA **3.93 / 4.5**
+
+- **Email** — lysopa@naver.com
+- **GitHub** — [github.com/Ssopaa](https://github.com/Ssopaa)
+- **Location** — Gwangjin-gu, Seoul, Republic of Korea
 
 ---
 
