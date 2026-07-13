@@ -13,7 +13,7 @@
 
 ## About Me
 
-Computer Science Undergraduate · GPA **3.93 / 4.5**
+Computer Science Undergraduate · GPA **4.09 / 4.5**
 
 - **Email** — lysopa@naver.com
 - **GitHub** — [github.com/Ssopaa](https://github.com/Ssopaa)
