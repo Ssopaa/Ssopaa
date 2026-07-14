@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2F81F7,100:7F77DD&height=200&section=header&text=Sehyun%20Cho&fontSize=58&fontColor=ffffff&fontAlignY=36&desc=AI%2FML%20Engineer%20%C2%B7%20CS%20%40%20Konkuk%20University%20%C2%B7%20GPA%203.93%2F4.5&descSize=18&descColor=ffffff&descAlignY=56" width="100%" alt="header" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2F81F7,100:7F77DD&height=200&section=header&text=Sehyun%20Cho&fontSize=58&fontColor=ffffff&fontAlignY=36&desc=AI%2FML%20Engineer%20%C2%B7%20CS%20%40%20Konkuk%20University%20%C2%B7%20GPA%204.09%2F4.5&descSize=18&descColor=ffffff&descAlignY=56" width="100%" alt="header" />
 
 <p>
   <a href="mailto:lysopa@naver.com"><img src="https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white"/></a>
