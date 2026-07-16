@@ -17,10 +17,22 @@ The official web portal of Konkuk University's 41st Student Welfare Committee. I
   <sub>Landing page</sub>
 </p>
 
+**Student-facing**
+
 <table>
 <tr>
-<td width="50%"><img src="../assets/ku-welfare-web/customer.png" alt="Student rental catalog" /><br/><sub align="center">Student view — rental catalog & cart</sub></td>
-<td width="50%"><img src="../assets/ku-welfare-web/admin.png" alt="Admin dashboard" /><br/><sub align="center">Admin dashboard — rental/print management</sub></td>
+<td width="50%"><img src="../assets/ku-welfare-web/customer.png" alt="Rental catalog" /><br/><sub>Rental catalog & cart</sub></td>
+<td width="50%"><img src="../assets/ku-welfare-web/plotter.png" alt="Large-format printing request" /><br/><sub>Large-format printing request</sub></td>
+</tr>
+</table>
+
+**Admin dashboard**
+
+<table>
+<tr>
+<td width="33%"><img src="../assets/ku-welfare-web/admin.png" alt="Rental management" /><br/><sub>Rental management</sub></td>
+<td width="33%"><img src="../assets/ku-welfare-web/admin2.png" alt="Plotter print management" /><br/><sub>Plotter print management</sub></td>
+<td width="33%"><img src="../assets/ku-welfare-web/admin3.png" alt="Item catalog management" /><br/><sub>Item catalog management</sub></td>
 </tr>
 </table>
 
