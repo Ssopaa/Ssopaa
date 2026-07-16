@@ -42,10 +42,10 @@ Computer Science Undergraduate · GPA **4.09 / 4.5**
 
 ## Projects
 
+### INPOSE — AI-Driven Matching & CRM System
+
 <table width="100%">
 <tr><td width="850">
-
-<b>INPOSE — AI-Driven Matching & CRM System</b>
 
 `Capstone` · `Solo` · `In production`
 
@@ -71,10 +71,10 @@ An AI CRM built into the live social-matching service [**Inpose**](https://inpos
 </td></tr>
 </table>
 
+### Trash is YOLO — AI Bulky Waste Management System
+
 <table width="100%">
 <tr><td width="850">
-
-<b>Trash is YOLO — AI Bulky Waste Management System</b>
 
 `Grand Prize ×2` · `Solo (code & research)`
 
@@ -96,10 +96,10 @@ A service that recognizes bulky household waste from a camera in real time and a
 </td></tr>
 </table>
 
+### ARAKON — Defense Reconnaissance AI Model
+
 <table width="100%">
 <tr><td width="850">
-
-<b>ARAKON — Defense Reconnaissance AI Model</b>
 
 `Team project` · `Konkuk Dream Semester`
 
@@ -119,10 +119,10 @@ A defense-reconnaissance AI that detects camouflaged/occluded military targets (
 </td></tr>
 </table>
 
+### Roadkill Detection Assist System
+
 <table width="100%">
 <tr><td width="850">
-
-<b>Roadkill Detection Assist System</b>
 
 `Team (AI role)` · `Agentic dev`
 
@@ -142,10 +142,10 @@ An AI-assisted traffic-control system that pre-screens road snapshots for animal
 </td></tr>
 </table>
 
+### Digital Image Processing — Classical CV
+
 <table width="100%">
 <tr><td width="850">
-
-<b>Digital Image Processing — Classical CV</b>
 
 `Solo` · `Classical CV (no DL)`
 
@@ -164,10 +164,10 @@ Two vision tasks solved with **classical image processing only** — a counterpo
 </td></tr>
 </table>
 
+### KU Welfare Web — Rental & Printing Portal
+
 <table width="100%">
 <tr><td width="850">
-
-<b>KU Welfare Web — Rental & Printing Portal</b>
 
 `Live Service` · `PM + Frontend` · `Team of 2`
 
@@ -190,10 +190,10 @@ The official portal of Konkuk University's Student Welfare Committee, digitalizi
 </td></tr>
 </table>
 
+### CampusForm — Club Recruitment Platform
+
 <table width="100%">
 <tr><td width="850">
-
-<b>CampusForm — Club Recruitment Platform</b>
 
 `Grand Prize` · `Frontend` · `Team`
 
@@ -221,10 +221,10 @@ An all-in-one recruitment web app that handles application collection, pass/fail
 
 > Research Intern @ **AI & Mobile Lab**, Konkuk University (Jan 2025 – Mar 2026) · Advisor: Prof. Seok-Ho Chang
 
+### DL-Based Image Transmission & Frequency Allocation
+
 <table width="100%">
 <tr><td width="850">
-
-<b>DL-Based Image Transmission & Frequency Allocation</b>
 
 `Published · KICS 2026`
 
@@ -238,10 +238,10 @@ DNN-based resource allocation for progressive image transmission over multi-freq
 </td></tr>
 </table>
 
+### Task-Oriented Communication — Power & Frequency Allocation
+
 <table width="100%">
 <tr><td width="850">
-
-<b>Task-Oriented Communication — Power & Frequency Allocation</b>
 
 `Industry-Academia Research`
 
