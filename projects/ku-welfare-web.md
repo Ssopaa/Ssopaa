@@ -8,6 +8,18 @@
 
 The official web portal of Konkuk University's 41st Student Welfare Committee. It digitalizes campus welfare operations — item rental and printing services — that were previously handled manually, drastically reducing administrative overhead. Currently **live and serving students**.
 
+<p align="center">
+  <img src="../assets/ku-welfare-web/main.png" width="700" alt="KU Welfare landing page" /><br/>
+  <sub>Landing page</sub>
+</p>
+
+<table>
+<tr>
+<td width="50%"><img src="../assets/ku-welfare-web/customer.png" alt="Student rental catalog" /><br/><sub align="center">Student view — rental catalog & cart</sub></td>
+<td width="50%"><img src="../assets/ku-welfare-web/admin.png" alt="Admin dashboard" /><br/><sub align="center">Admin dashboard — rental/print management</sub></td>
+</tr>
+</table>
+
 ## Architecture
 
 ```mermaid

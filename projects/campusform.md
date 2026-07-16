@@ -26,6 +26,11 @@ Built on **Next.js (App Router)** with feature-based routing — `auth`, `home`,
 
 Frontend developer on a 3-person FE team. I built the **Home / My / Manage / Notification** pages and implemented & integrated the **smart interview scheduling** feature — automatic time-slot recommendation with applicant-side self-adjustment.
 
+<p align="center">
+  <img src="../assets/campusform/onboarding.png" width="300" alt="Smart interview scheduling UI" /><br/>
+  <sub>Smart interview scheduling — one of the features I built</sub>
+</p>
+
 ## Tech stack
 
 `Next.js` · `TypeScript` · `React` · `Zustand` · `TailwindCSS` · `Vercel`

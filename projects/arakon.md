@@ -43,9 +43,19 @@ CBAM consistently improved detection over the YOLOv8 baseline:
 
 Final model: **mAP@50 ≈ 0.93** after hyperparameter optimization.
 
+<p align="center">
+  <img src="../assets/arakon/val_batch0_pred.jpg" width="600" alt="YOLOv8+CBAM detection results on the validation set" /><br/>
+  <sub>YOLOv8 + CBAM detections on the validation set (person / vehicle / APC / tank)</sub>
+</p>
+
 ## My role
 
 - **Data collection & annotation** — gathered military imagery via web scraping and synthetic **ARMA 3** simulation scenarios; labeled **1,800+** images (3 classes) using Roboflow.
+
+<p align="center">
+  <img src="../assets/arakon/arma_sample.jpg" width="420" alt="Synthetic training scenario generated in ARMA 3" /><br/>
+  <sub>Synthetic training scenario generated in ARMA 3</sub>
+</p>
 - **Experiments** — ran the architecture-search comparison and the hyperparameter tuning (class/box/DFL loss weights, Cosine Annealing LR, Mosaic/MixUp augmentation).
 
 ## Tech stack
