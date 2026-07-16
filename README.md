@@ -45,7 +45,7 @@ Computer Science Undergraduate · GPA **4.09 / 4.5**
 <table width="100%">
 <tr><td width="850">
 
-### INPOSE — AI-Driven Matching & CRM System
+<h3>INPOSE — AI-Driven Matching & CRM System</h3>
 
 `Capstone` · `Solo` · `In production`
 
@@ -74,7 +74,7 @@ An AI CRM built into the live social-matching service [**Inpose**](https://inpos
 <table width="100%">
 <tr><td width="850">
 
-### Trash is YOLO — AI Bulky Waste Management System
+<h3>Trash is YOLO — AI Bulky Waste Management System</h3>
 
 `Grand Prize ×2` · `Solo (code & research)`
 
@@ -99,7 +99,7 @@ A service that recognizes bulky household waste from a camera in real time and a
 <table width="100%">
 <tr><td width="850">
 
-### ARAKON — Defense Reconnaissance AI Model
+<h3>ARAKON — Defense Reconnaissance AI Model</h3>
 
 `Team project` · `Konkuk Dream Semester`
 
@@ -122,7 +122,7 @@ A defense-reconnaissance AI that detects camouflaged/occluded military targets (
 <table width="100%">
 <tr><td width="850">
 
-### Roadkill Detection Assist System
+<h3>Roadkill Detection Assist System</h3>
 
 `Team (AI role)` · `Agentic dev`
 
@@ -145,7 +145,7 @@ An AI-assisted traffic-control system that pre-screens road snapshots for animal
 <table width="100%">
 <tr><td width="850">
 
-### Digital Image Processing — Classical CV
+<h3>Digital Image Processing — Classical CV</h3>
 
 `Solo` · `Classical CV (no DL)`
 
@@ -167,7 +167,7 @@ Two vision tasks solved with **classical image processing only** — a counterpo
 <table width="100%">
 <tr><td width="850">
 
-### KU Welfare Web — Rental & Printing Portal
+<h3>KU Welfare Web — Rental & Printing Portal</h3>
 
 `Live Service` · `PM + Frontend` · `Team of 2`
 
@@ -193,7 +193,7 @@ The official portal of Konkuk University's Student Welfare Committee, digitalizi
 <table width="100%">
 <tr><td width="850">
 
-### CampusForm — Club Recruitment Platform
+<h3>CampusForm — Club Recruitment Platform</h3>
 
 `Grand Prize` · `Frontend` · `Team`
 
@@ -224,7 +224,7 @@ An all-in-one recruitment web app that handles application collection, pass/fail
 <table width="100%">
 <tr><td width="850">
 
-### DL-Based Image Transmission & Frequency Allocation
+<h3>DL-Based Image Transmission & Frequency Allocation</h3>
 
 `Published · KICS 2026`
 
@@ -241,7 +241,7 @@ DNN-based resource allocation for progressive image transmission over multi-freq
 <table width="100%">
 <tr><td width="850">
 
-### Task-Oriented Communication — Power & Frequency Allocation
+<h3>Task-Oriented Communication — Power & Frequency Allocation</h3>
 
 `Industry-Academia Research`
 
