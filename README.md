@@ -231,7 +231,7 @@ An all-in-one recruitment web app that handles application collection, pass/fail
 DNN-based resource allocation for progressive image transmission over multi-frequency-band MIMO interference channels — jointly optimizing per-packet spectral efficiency, spatial multiplexing, sub-band combination, and transmit power via a PSNR-based, end-to-end differentiable loss.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white)
 
 **[Details →](projects/research-image-transmission.md)**
 
