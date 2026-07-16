@@ -1,3 +1,7 @@
+<p align="center">
+  <img src="../assets/ku-welfare-web/logo.png" width="180" alt="KU Welfare Web logo" />
+</p>
+
 # KU Welfare Web — Rental & Printing Portal
 
 > Jan 2026 – Present · **PM + Frontend** · Team of 2 · Live in production
