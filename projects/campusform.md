@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="../assets/campusform/logo.png" width="180" alt="CampusForm logo" />
-</p>
-
 # CampusForm — Club Recruitment Platform
 
 > Sep 2025 – Feb 2026 · **Frontend** · Team · 🏆 Grand Prize (Kuit 6th Demoday 2026)
