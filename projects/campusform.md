@@ -1,7 +1,8 @@
 # CampusForm — Club Recruitment Platform
 
 > Sep 2025 – Feb 2026 · **Frontend** · Team · 🏆 Grand Prize (Kuit 6th Demoday 2026)
-> [Repository](https://github.com/Konkuk-KUIT/CAMPUSFORM-Web)
+
+### 🔗 Live Service — **[web.campusform.kro.kr](https://web.campusform.kro.kr/)** · [Repository](https://github.com/Konkuk-KUIT/CAMPUSFORM-Web)
 
 ## Overview
 

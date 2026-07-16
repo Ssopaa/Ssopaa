@@ -1,7 +1,8 @@
 # KU Welfare Web — Rental & Printing Portal
 
 > Jan 2026 – Present · **PM + Frontend** · Team of 2 · Live in production
-> [Live](https://ku-welfare-web.vercel.app/) · [Repository](https://github.com/41-Welfare-Web)
+
+### 🔗 Live Service — **[ku-welfare-web.vercel.app](https://ku-welfare-web.vercel.app/)** · [Repository](https://github.com/41-Welfare-Web)
 
 ## Overview
 

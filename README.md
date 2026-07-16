@@ -208,6 +208,7 @@ An all-in-one recruitment web app that handles application collection, pass/fail
 ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
 ![TailwindCSS](https://img.shields.io/badge/TailwindCSS-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
 &nbsp;
+[![Live](https://img.shields.io/badge/Live-web.campusform.kro.kr-000000?style=flat-square&logo=vercel)](https://web.campusform.kro.kr/)
 [![Repo](https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github)](https://github.com/Konkuk-KUIT/CAMPUSFORM-Web)
 
 **[Details →](projects/campusform.md)**
