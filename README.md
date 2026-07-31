@@ -273,7 +273,7 @@ Resource allocation for D2D wireless networks. Frequency-allocation comparison o
 
 `Neuromorphic · SNN`
 
-A spiking heteroassociative memory that recalls a letter (A–J) from a digit (0–9). Two tracks: a **closed-form contrastive-optimal-weight** solver (pseudo-inverse + quadratic features) and a **biologically plausible STDP** spiking simulation (LIF + step-conductance synapses, protocol T2 = STDP + nontarget inhibition).
+A spiking network that learns a digit → letter association purely through **spike-timing-dependent plasticity (STDP)** — LIF neurons + step-conductance synapses, taught with nontarget inhibition, recalling the letter from the digit alone. A closed-form contrastive-optimal-weight solver serves as the reference baseline.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
