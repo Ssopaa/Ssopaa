@@ -21,7 +21,7 @@ Computer Science Undergraduate · GPA **4.09 / 4.5**
 
 ## Experience
 
-- **KIST — CoBI Lab** · Research Intern · Jun 2026 – Aug 2026 — neuromorphic / Spiking Neural Networks: LIF + surrogate-gradient, a multimodal disinhibitory cross-modal circuit, and STDP-based heteroassociative memory *(Semiconductor Technology Research Division)*
+- **KIST — CoBI Lab** · Research Intern · Jun 2026 – Aug 2026 — neuromorphic computing / Spiking Neural Networks (LIF, surrogate-gradient training, multimodal & plasticity-based SNN research) *(Semiconductor Technology Research Division)*
 - **AI & Mobile Lab, Dept. of Electrical & Electronic Engineering, Konkuk University** · Research Intern · Jan 2025 – Mar 2026 — DNN/GNN power & frequency allocation for D2D wireless networks (task-oriented communication)
 - **Undergraduate Research Internship (RUS) Program** · AI & Mobile Lab, Konkuk University · Mar 2026 – Jun 2026 — DNN-based image transmission (led to KICS 2026 paper)
 
