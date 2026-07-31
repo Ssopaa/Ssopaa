@@ -21,7 +21,7 @@ Computer Science Undergraduate · GPA **4.09 / 4.5**
 
 ## Experience
 
-- **KIST — CoBI Lab** · Research Intern · Jun 2026 – Aug 2026 — neuromorphic computing / Spiking Neural Networks (LIF, surrogate-gradient training, multimodal & plasticity-based SNN research) *(Semiconductor Technology Research Division)*
+- **KIST — CoBI Lab** · Research Intern · Jun 2026 – Aug 2026 — neuromorphic / Spiking Neural Networks: LIF + surrogate-gradient training, an **STDP-based heteroassociative memory**, and multimodal SNN simulations *(Semiconductor Technology Research Division)*
 - **AI & Mobile Lab, Dept. of Electrical & Electronic Engineering, Konkuk University** · Research Intern · Jan 2025 – Mar 2026 — DNN/GNN power & frequency allocation for D2D wireless networks (task-oriented communication)
 - **Undergraduate Research Internship (RUS) Program** · AI & Mobile Lab, Konkuk University · Mar 2026 – Jun 2026 — DNN-based image transmission (led to KICS 2026 paper)
 
@@ -263,6 +263,27 @@ Resource allocation for D2D wireless networks. Frequency-allocation comparison o
 
 </td></tr>
 </table>
+
+> Research Intern @ **KIST — CoBI Lab** (Jun 2026 – Aug 2026) · neuromorphic / Spiking Neural Networks
+
+### STDP-based Heteroassociative Memory
+
+<table width="100%">
+<tr><td width="850">
+
+`Neuromorphic · SNN`
+
+A spiking heteroassociative memory that recalls a letter (A–J) from a digit (0–9). Two tracks: a **closed-form contrastive-optimal-weight** solver (pseudo-inverse + quadratic features) and a **biologically plausible STDP** spiking simulation (LIF + step-conductance synapses, protocol T2 = STDP + nontarget inhibition).
+
+![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
+![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
+
+**[Details →](projects/stdp-heteroassociative-memory.md)**
+
+</td></tr>
+</table>
+
+Also ran multimodal spiking-neural-network simulations (audio-visual) exploring cross-modal circuit motifs.
 
 ---
 
