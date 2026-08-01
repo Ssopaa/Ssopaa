@@ -1,6 +1,6 @@
 # DL-Based Image Transmission & Frequency Allocation
 
-> AI & Mobile Lab, Dept. of Electrical & Electronic Engineering, Konkuk University · RUS Program (Mar – Jun 2026)
+> AI & Mobile Lab, Dept. of EE, Konkuk University · RUS Program (Mar – Jun 2026)
 > Advisor: Prof. Seok-Ho Chang · **Published — KICS Summer Conference 2026**
 
 ## Overview

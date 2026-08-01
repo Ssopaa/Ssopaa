@@ -1,6 +1,6 @@
 # Task-Oriented Communication — Power & Frequency Allocation
 
-> AI & Mobile Lab, Dept. of Electrical & Electronic Engineering, Konkuk University · Industry-Academia Research (2025)
+> AI & Mobile Lab, Dept. of EE, Konkuk University · Industry-Academia Research (2025)
 
 ## Overview
 
