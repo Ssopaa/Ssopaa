@@ -291,3 +291,17 @@ Also ran multimodal spiking-neural-network simulations (audio-visual) exploring 
 
 > Minjae Kim, **Sehyun Cho**, Seok-Ho Chang, *"Neural Network-Based Optimal Image Transmission Over Multiple-Frequency Band Interference Channels,"* **KICS Summer Conference 2026**, July 2026.
 
+---
+
+## Activities
+
+- **Director-General**, Student Welfare Committee 'Yeon' (41st), Konkuk Univ. · Jan 2026 – Present
+- **Web Part Member (6th)**, Kuit Development Club, Konkuk Univ. · Sep 2025 – Feb 2026
+- **Server Part Member (7th)**, Kuit Development Club, Konkuk Univ. · Mar 2025 – Jun 2026
+- **Member**, Maker's Farm (central academic club), Konkuk Univ. · Feb 2025 – Feb 2026
+- **Executive Management Member**, Student Welfare Committee 'Journey' (40th), Konkuk Univ. · Jan – Nov 2025
+- **Member**, EDGE (game development club), Konkuk Univ. · Jun 2024 – Jan 2025
+- **Head of Planning & Executive Dept.**, Smart ICT Convergence Eng. Student Council 'Booting' (6th) · Feb – Aug 2022
+- **Planning Dept. Member**, Smart ICT Convergence Eng. Student Council 'BacKUp' (5th) · Feb 2021 – Jan 2022
+- **Coding Mentor**, "Coding with KU" volunteer program · Apr – Aug 2021
+
