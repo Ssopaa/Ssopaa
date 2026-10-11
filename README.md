@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2F81F7,100:7F77DD&height=200&section=header&text=Sehyun%20Cho&fontSize=58&fontColor=ffffff&fontAlignY=36&desc=AI%2FML%20Engineer%20%C2%B7%20CS%20%40%20Konkuk%20University%20%C2%B7%20GPA%204.13%2F4.5&descSize=18&descColor=ffffff&descAlignY=56" width="100%" alt="header" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:2F81F7,100:7F77DD&height=200&section=header&text=Sehyun%20Cho&fontSize=58&fontColor=ffffff&fontAlignY=36&desc=AI%2FML%20Engineer%20%C2%B7%20CS%20%40%20Konkuk%20University%20%C2%B7%20GPA%204.13%2F4.5%20(Major%204.2)&descSize=18&descColor=ffffff&descAlignY=56" width="100%" alt="header" />
 
 <p>
   <a href="mailto:lysopa@naver.com"><img src="https://img.shields.io/badge/Email-EA4335?style=flat-square&logo=gmail&logoColor=white"/></a>
@@ -13,7 +13,7 @@
 
 ## About Me
 
-Computer Science Undergraduate · GPA **4.13 / 4.5**
+Computer Science Undergraduate · GPA **4.13 / 4.5** (Major 4.2)
 
 - **Email** — lysopa@naver.com
 - **GitHub** — [github.com/Ssopaa](https://github.com/Ssopaa)
@@ -273,7 +273,7 @@ Resource allocation for D2D wireless networks. Frequency-allocation comparison o
 
 `Neuromorphic · SNN`
 
-A spiking network that learns a digit → letter association purely through **spike-timing-dependent plasticity (STDP)** — LIF neurons + step-conductance synapses, taught with nontarget inhibition, recalling the letter from the digit alone.
+A spiking network that learns a digit → letter association purely through **spike-timing-dependent plasticity (STDP)** — LIF neurons + step-conductance synapses, taught with nontarget inhibition, recalling the letter from the digit alone. A closed-form contrastive-optimal-weight solver serves as the reference baseline.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
