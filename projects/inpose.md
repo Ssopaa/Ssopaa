@@ -89,7 +89,7 @@ Goal: show each user the feeds they are most likely to **contact** the creator o
 ### 2. Defining the label from contact data
 The DB never records *which feed* led to a contact. I defined it as **viewing the other user's feed within 10 minutes before the first contact** — 82% of linked contacts happened within 1 minute of the view. Only message timestamps are used, never message content.
 
-Findings from a contact-analysis dashboard (36,658 first contacts):
+Findings from a contact-analysis dashboard (~40K first contacts):
 - Only **27.3%** of contacts link to a feed view; the rest come from profiles or job posts.
 - **37%** of contacts come from clusters the user had never interacted with — pure behavior-based personalization misses a large share.
 - Fixed a double-counting bug in the view-stage funnel that had inflated first-view contact rate from 5.3% to 9.0%.
@@ -110,7 +110,7 @@ The most important feature was *the share of contacts users of the same role sen
 ### 4. Evaluation
 All comparisons use a **time split** (predict from data before a cutoff, score on real contacts after it) with **paired bootstrap 95% CIs**. The current app is latest-first, so the ground truth is biased *toward* latest-first.
 
-**Cluster prediction vs. latest-first** (10/1 → 10/30, 1,471 users)
+**Cluster prediction vs. latest-first** (10/1 → 10/30, ~1.5K users)
 
 | Method | Top-20 clusters | Top-50 clusters |
 |---|---|---|
@@ -118,9 +118,9 @@ All comparisons use a **time split** (predict from data before a cutoff, score o
 | Clusters popular with same-role users | 11.7% | 23.4% |
 | Latest-first (feeds posted in period) | 7.0% | 17.1% |
 
-**Retraining with October data** (10/31 → 11/7, 647 users): top-20 16.4% → **18.1%**, top-50 27.9% → **30.1%** (both significant) — evidence for scheduled retraining.
+**Retraining with October data** (10/31 → 11/7, ~600 users): top-20 16.4% → **18.1%**, top-50 27.9% → **30.1%** (both significant) — evidence for scheduled retraining.
 
-**Ordering inside each cluster** (10/31 lists → actual contacts by 11/7, 648 users)
+**Ordering inside each cluster** (10/31 lists → actual contacts by 11/7, ~600 users)
 
 | Feed list (500 items) | Contacts in top 100 | Contacts in top 500 | Median feed age |
 |---|---|---|---|
