@@ -62,12 +62,15 @@ An AI CRM built into the live social-matching service [**Inpose**](https://inpos
 - Extracted **CLIP ViT-L/14** embeddings from **384,761** images → PCA + **K-Means (K=500)**; chose K-Means over DBSCAN/HDBSCAN after analyzing failure modes on high-dimensional embeddings
 - Real-time inference at **~13ms/image (~78.8 img/s, GPU)** via cosine-distance centroid matching
 - Behavior-weighted user affinity module (view/like/comment/scrap), deployed with **FastAPI**
+- **Feed recommender (Oct–Nov 2026, offline-validated):** benchmarked 4 embedding models (CLIP ± PCA, **SigLIP 2**, DINOv2) on ~426K feeds and moved to SigLIP 2 · K=1000; trained a **LightGBM** user × cluster model on contact data that predicts where each user's next contacts will come from
+- In time-split evaluation, recommended feeds contain **1.08 vs 0.76** actual future contacts per 500 compared with the app's current latest-first feed (**+42%**, paired bootstrap 95% CI above 0); top-50 clusters capture **30.1%** of future contacts
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
 ![CLIP](https://img.shields.io/badge/OpenAI_CLIP-412991?style=flat-square&logo=openai&logoColor=white)
 ![scikit-learn](https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikitlearn&logoColor=white)
 ![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=flat-square&logo=fastapi&logoColor=white)
+![LightGBM](https://img.shields.io/badge/LightGBM-02569B?style=flat-square)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
 &nbsp;
 [![Service](https://img.shields.io/badge/Service-inpose.co-2F81F7?style=flat-square&logo=googlechrome&logoColor=white)](https://inpose.co/)
