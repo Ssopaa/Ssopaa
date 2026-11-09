@@ -48,6 +48,24 @@ A React 19 + Vite single-page app, styled with TailwindCSS 4, talking to the wel
 
 Project planning (PM), frontend architecture & implementation, Vercel deployment, and ongoing maintenance/operations (4-person team). The service is live and actively maintained.
 
+## Self-service operations for non-technical staff
+
+The committee is run by student staff who are mostly non-CS majors. Some routine operations — per-unit tent inventory and closed-day scheduling — could only be handled by a developer editing the database directly. In Sep–Oct 2026 these were refactored into admin dashboard tabs so staff can manage them on their own.
+
+| Task | Before | After |
+|------|--------|-------|
+| Tent inventory | DB edits per physical unit | **Tent management tab** (mine) |
+| Closed days | DB inserts per date | **Holiday management tab** (teammate) |
+
+**Tent management** (my work)
+- Tracks each physical tent individually: serial number, damage flag, notes, and fabric/frame condition (normal / damaged low·mid·high)
+- Assign specific tents when checking out a rental, with duplicate assignments blocked
+- Add / delete tents, with rental availability derived from damage and current rental status
+- Covered by unit tests for the management table and assignment modal
+
+**Holiday management** (teammate)
+- Register or delete closed-day ranges in bulk instead of one date at a time
+
 ## Tech stack
 
 `React` · `TypeScript` · `Vite` · `TailwindCSS` · `React Router` · `Axios` · `Vercel`

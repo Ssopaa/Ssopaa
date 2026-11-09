@@ -184,6 +184,7 @@ The official portal of Konkuk University's Student Welfare Committee, digitalizi
 **My role** — Project planning (PM), frontend architecture & implementation, deployment, and ongoing maintenance/operations.
 
 - Digitalized rental & printing workflows, drastically reducing administrative overhead
+- Refactored DB-only operations into self-service admin tools so **non-technical committee staff can run the service without touching the database** — built a tent inventory system (per-unit tracking, damage/part condition, rental assignment, add/delete) alongside the team's bulk holiday scheduling
 
 ![React](https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB)
 ![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
