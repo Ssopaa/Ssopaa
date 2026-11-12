@@ -59,10 +59,10 @@ An AI CRM built into the live social-matching service [**Inpose**](https://inpos
 
 **My role** — Sole AI developer on the team: designed and built the entire ML pipeline single-handedly — embedding extraction, clustering, inference server, user-affinity module, and production deployment.
 
-- **v1 (Jun 2026, in production):** extracted **CLIP ViT-L/14** embeddings from **~385K** images → PCA + **K-Means (K=500)**; chose K-Means over DBSCAN/HDBSCAN after analyzing failure modes on high-dimensional embeddings
+- Extracted **CLIP ViT-L/14** embeddings from **425,933** images → **K-Means (K=500)** on L2-normalized 768-D vectors; chose K-Means over DBSCAN/HDBSCAN after analyzing failure modes on high-dimensional embeddings
 - Real-time inference at **~13ms/image (~78.8 img/s, GPU)** via cosine-distance centroid matching
 - Behavior-weighted user affinity module (view/like/comment/scrap), deployed with **FastAPI**
-- **Feed recommender (Oct–Nov 2026, offline-validated):** benchmarked 4 embedding models (CLIP ± PCA, **SigLIP 2**, DINOv2) on ~426K feeds and moved to SigLIP 2 · K=1000; trained a **LightGBM** user × cluster model on contact data that predicts where each user's next contacts will come from
+- **Feed recommender (Oct–Nov 2026, offline-validated):** benchmarked 4 embedding models (CLIP ± PCA, **SigLIP 2**, DINOv2) on 425,933 feeds and moved to SigLIP 2 · K=1000; trained a **LightGBM** user × cluster model on contact data that predicts where each user's next contacts will come from
 - In time-split evaluation, recommended feeds contain **1.08 vs 0.76** actual future contacts per 500 compared with the app's current latest-first feed (**+42%**, paired bootstrap 95% CI above 0); top-50 clusters capture **30.1%** of future contacts
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)

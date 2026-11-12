@@ -27,7 +27,7 @@ The core ML system — semantic feed clustering, real-time inference, and user�
 
 ## Architecture
 
-> The diagrams below describe the first production version (CLIP ViT-L/14, K=500). The recommender work below moves to SigLIP 2 with K=1000.
+> The diagrams below describe the CLIP ViT-L/14 · K=500 pipeline. The recommender work below moves to SigLIP 2 with K=1000.
 
 ### Training pipeline
 
@@ -35,10 +35,9 @@ The core ML system — semantic feed clustering, real-time inference, and user�
 flowchart LR
     A[MySQL<br/>feed images] --> B[async download<br/>aiohttp]
     B --> C[CLIP ViT-L/14<br/>encode_image]
-    C --> D[embeddings<br/>~385K × 768]
+    C --> D[embeddings<br/>425,933 × 768]
     D --> E[L2 normalize]
-    E --> F[PCA<br/>768D → 50D]
-    F --> G[K-Means<br/>K=500]
+    E --> G[K-Means<br/>K=500]
     G --> H[centroids<br/>500 × 768]
 ```
 
@@ -59,13 +58,13 @@ The CLIP model (~2.4s init) and centroids are loaded once at server start and re
 - **CLIP ViT-L/14 (768-dim)** over ViT-B variants — richer semantic representation for style/subject/composition.
 - **K-Means over DBSCAN / HDBSCAN** — density-based methods failed on CLIP's high-dimensional, continuous embedding space (DBSCAN collapsed everything into 1–2 clusters or pure noise; HDBSCAN produced an unpredictable cluster count). K-Means gives a fixed cluster count, no noise points, and savable centroids — exactly what a production service needs.
 - **K=500 chosen by qualitative evaluation** — standard metrics (silhouette, Davies-Bouldin) favored K≈10, which lumped ~40K images per cluster and destroyed the goal of fine-grained grouping. I instead compared K=300/500/700 on visual/semantic coherence within clusters and selected K=500 as the best balance.
-- **Centroids stored in original 768-dim** — inference needs no PCA model, just `centroids.npy`, minimizing deployment dependencies.
+- **Train in the same space as inference** — K-Means runs on L2-normalized 768-dim vectors, so offline labels match real-time assignment and deployment needs only `centroids.npy`.
 
-## Results (v1, Jun 2026)
+## Results
 
 | Metric | Value |
 |--------|-------|
-| Training images | ~385K (now ~426K feeds in the recommender work) |
+| Training images | 425,933 |
 | Embedding dim | 768 (CLIP ViT-L/14) |
 | Clusters | 500 |
 | End-to-end inference | **~13 ms/image** |
@@ -81,7 +80,7 @@ Aggregates each user's `view / like / comment / scrap` interactions per cluster,
 Goal: show each user the feeds they are most likely to **contact** the creator of — not just the ones they look at. The app currently shows a plain latest-first feed, so the recommender has to beat that.
 
 ### 1. Rebuilding the cluster foundation
-- **Embedding benchmark** — extracted ~426K feeds with four models (CLIP ViT-L/14 with and without PCA, **SigLIP 2 SO400M**, DINOv2 ViT-L/14). The production model compressed embeddings to 50D with PCA, losing the fine detail (mood, face shape, styling) that matters for model photography. SigLIP 2 became the reference model.
+- **Embedding benchmark** — extracted 425,933 feeds with four models (CLIP ViT-L/14 with and without PCA, **SigLIP 2 SO400M**, DINOv2 ViT-L/14). The production model compressed embeddings to 50D with PCA, losing the fine detail (mood, face shape, styling) that matters for model photography. SigLIP 2 became the reference model.
 - **K = 100 / 500 / 1000** — K=500 looked better at equal cluster count, but at an equal *fraction* of clusters the gap was not significant (28.2% vs 27.3%, 95% CI −2.4 ~ +0.6%p); the difference came from bigger clusters. Chose the finer **K=1000**.
 - **Batch assignment for new feeds** — the upload-time assignment server had stopped, leaving ~250–300 new feeds/day unclustered. Wrote a batch job reusing the exact production assignment code.
 - **Image cost** — routed all image loads through the CDN instead of the raw object store; downloading ~2.7K new feeds (~4.5 GB) cost about $0.50.
