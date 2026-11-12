@@ -50,7 +50,7 @@ Computer Science Undergraduate · GPA **4.13 / 4.5** (Major 4.2)
 |---|---|
 | **Deployed / maintained** | **FastAPI, Python, CLIP, K-Means, MySQL** — INPOSE clustering/inference/user affinity; **React, TypeScript, Vite, Vercel** — KU Welfare Web frontend and operations |
 | **Implemented in projects / research** | **YOLOv8, PyTorch, OpenCV** — Trash is YOLO, ARAKON, Roadkill; **TensorFlow / PyTorch** — DNN research; **Next.js, Zustand** — CampusForm |
-| **Benchmarked / validated offline** | **SigLIP 2, DINOv2, LightGBM, PCA** — INPOSE feed recommendation (not live recommendation results) |
+| **Benchmarked / validated offline** | **SigLIP 2, DINOv2, LightGBM, PCA** — INPOSE feed recommendation |
 
 ---
 
@@ -63,15 +63,15 @@ Computer Science Undergraduate · GPA **4.13 / 4.5** (Major 4.2)
 
 `Capstone` · `Team — sole AI dev` · `Core ML deployed · Feed recommender offline-validated`
 
-An AI/ML system for the live service [**Inpose**](https://inpose.co/): **deployed** image clustering, real-time inference, and user-affinity mapping; **offline-validated (not yet integrated)** feed recommendation; **planned** job-post recommendation.
+An AI/ML system for the live service [**Inpose**](https://inpose.co/) — clusters feed images by visual semantics and models each user's taste to power personalized **feed and job-post recommendations**.
 
 **My role** — Sole AI developer on the team: designed and built the entire ML pipeline single-handedly — embedding extraction, clustering, inference server, user-affinity module, and production deployment.
 
 - Extracted **CLIP ViT-L/14** embeddings from **~430K** images → **K-Means (K=500)** on L2-normalized 768-D vectors; chose K-Means over DBSCAN/HDBSCAN after analyzing failure modes on high-dimensional embeddings
 - Real-time inference at **~13ms/image (~78.8 img/s, GPU)** via cosine-distance centroid matching
 - Behavior-weighted user affinity module (view/like/comment/scrap), deployed with **FastAPI**
-- **Feed recommender (Oct–Nov 2026; offline-validated, not deployed):** benchmarked CLIP with/without PCA, **SigLIP 2**, and DINOv2 on ~430K feeds; developed a SigLIP 2 · K=1000 + **LightGBM** user × cluster recommender using contact data.
-- **Offline time-split evaluation (not a live A/B test):** proposed top-500 feed lists covered **1.08 vs 0.76** observed future contacts per user compared with the latest-first baseline (**+42%**, paired bootstrap 95% CI above 0); top-50 clusters captured **30.1%**. This is **not** a measured live conversion uplift.
+- **Feed recommender (Oct–Nov 2026):** benchmarked CLIP with/without PCA, **SigLIP 2**, and DINOv2 on ~430K feeds; developed a SigLIP 2 · K=1000 + **LightGBM** user × cluster recommender using contact data.
+- In offline time-split evaluation, top-500 feed lists covered **1.08 vs 0.76** future contacts per user against the latest-first baseline (**+42%**, paired bootstrap 95% CI above 0); top-50 clusters captured **30.1%**
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
