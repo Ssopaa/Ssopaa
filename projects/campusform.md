@@ -1,6 +1,6 @@
 # CampusForm — Club Recruitment Platform
 
-> Sep 2025 – Feb 2026 · **Frontend** · Team · 🏆 Grand Prize (Kuit 6th Demoday 2026)
+> Sep 2025 – Feb 2026 · **Frontend** · Team · 🏆 Excellence Award — 2nd place (Kuit 6th Demoday 2026)
 
 ### 🔗 Live Service — **[web.campusform.kro.kr](https://web.campusform.kro.kr/)** · [Repository](https://github.com/Konkuk-KUIT/CAMPUSFORM-Web)
 
@@ -8,7 +8,7 @@
 
 University club recruiting is scattered across Google Forms, manual spreadsheet work, mass texting, and hand-built interview timetables. CampusForm unifies the entire flow into one service: application collection → document/interview pass-fail management → result summaries & SMS templates → smart interview scheduling.
 
-Won **Grand Prize at Kuit 6th Demoday**.
+Won the **Excellence Award (2nd place) at Kuit 6th Demoday**.
 
 <table>
 <tr>

@@ -207,9 +207,9 @@ The official portal of Konkuk University's Student Welfare Committee, digitalizi
 <table width="100%">
 <tr><td width="850">
 
-`Grand Prize` · `Frontend` · `Team`
+`Excellence Award (2nd)` · `Frontend` · `Team`
 
-An all-in-one recruitment web app that handles application collection, pass/fail management, bulk SMS, and interview scheduling in one place. Grand Prize at Kuit 6th Demoday.
+An all-in-one recruitment web app that handles application collection, pass/fail management, bulk SMS, and interview scheduling in one place. Excellence Award (2nd place) at Kuit 6th Demoday.
 
 **My role** — Frontend developer: built the Home / My / Manage / Notification pages and implemented & integrated the **smart scheduling** feature.
 
