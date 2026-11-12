@@ -2,7 +2,7 @@
 
 > Jan 2026 – Present · **PM + Frontend** · Team of 4 · Live in production
 
-### 🔗 Live Service — **[ku-welfare-web.vercel.app](https://ku-welfare-web.vercel.app/)** · [Repository](https://github.com/41-Welfare-Web)
+### 🔗 Live Service — **[ku-welfare-web.vercel.app](https://ku-welfare-web.vercel.app/)** · [Frontend source](https://github.com/41-Welfare-Web/KU_WelfareWeb_FrontEnd) · [Team backend source](https://github.com/41-Welfare-Web/KU_WelfareWeb_BackEnd)
 
 ## Overview
 

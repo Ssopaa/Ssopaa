@@ -9,6 +9,8 @@ Disposing of bulky household waste in Korea requires manually identifying the it
 
 Won the **Grand Prize** at the RISE AI-LivingLab Challenge 2025 and the **Excellence Award** (誠 category) at the 誠信義 AI Academic Competition 2025.
 
+**Evidence:** [Training/data-processing source and competition materials](https://github.com/Ssopaa/Trash_Yolo) · [FastAPI inference prototype](https://github.com/Ssopaa/trashyolowa).
+
 ## Architecture
 
 ```mermaid
@@ -26,6 +28,16 @@ flowchart LR
 - **Augmentation** — albumentations pipeline (horizontal flip, brightness/contrast, rotation ±15°, shift-scale-rotate) with keypoint-aware bounding-box transforms.
 - **Training** — YOLOv8n at imgsz=800, 300 epochs, auto batch-size search, with separate experiments for top-only classes and a dedicated sofa classifier.
 - **Service** — end-to-end prototype mapping each detected class to its disposal fee.
+
+## Administrative workflow and feasibility
+
+Rather than focusing solely on model accuracy, I researched **Gwangjin-gu's existing bulky-waste reporting process**, including manual classification, fee lookup, reporting, and paper receipt/sticker handling.
+
+- **User flow** — prototyped photo capture, item recognition, fee calculation, and payment interaction, and designed a **staff management dashboard**.
+- **Municipal integration proposal** — suggested replacing paper receipts with a **QR-based mobile receipt** linked to reporting and administrative processing.
+- **Feasibility feedback** — contacted Gwangjin-gu district office and received positive feedback about the proposal.
+
+**Deployment boundary:** the fee-recognition service was prototyped; the QR-based receipt and municipal integration were **proposed, not implemented in the district's live system**.
 
 ## Results
 

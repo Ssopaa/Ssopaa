@@ -44,6 +44,14 @@ Computer Science Undergraduate · GPA **4.13 / 4.5** (Major 4.2)
 <img src="https://skillicons.dev/icons?i=git,github,vscode,vercel" />
 <img src="https://img.shields.io/badge/Roboflow-6706CE?style=flat-square&logo=roboflow&logoColor=white"/>
 
+**How I've used these tools** *(project-backed scope, not proficiency ratings)*
+
+| Scope | Technologies and evidence |
+|---|---|
+| **Deployed / maintained** | **FastAPI, Python, CLIP, K-Means, MySQL** — INPOSE clustering/inference/user affinity; **React, TypeScript, Vite, Vercel** — KU Welfare Web frontend and operations |
+| **Implemented in projects / research** | **YOLOv8, PyTorch, OpenCV** — Trash is YOLO, ARAKON, Roadkill; **TensorFlow / PyTorch** — DNN research; **Next.js, Zustand** — CampusForm |
+| **Benchmarked / validated offline** | **SigLIP 2, DINOv2, LightGBM, PCA** — INPOSE feed recommendation (not live recommendation results) |
+
 ---
 
 ## Projects
@@ -53,17 +61,17 @@ Computer Science Undergraduate · GPA **4.13 / 4.5** (Major 4.2)
 <table width="100%">
 <tr><td width="850">
 
-`Capstone` · `Team — sole AI dev` · `In production`
+`Capstone` · `Team — sole AI dev` · `Core ML deployed · Feed recommender offline-validated`
 
-An AI CRM built into the live social-matching service [**Inpose**](https://inpose.co/) — it automatically clusters feed images by visual semantics and learns each user's behavior to power personalized **job-posting and feed recommendations**.
+An AI/ML system for the live service [**Inpose**](https://inpose.co/): **deployed** image clustering, real-time inference, and user-affinity mapping; **offline-validated (not yet integrated)** feed recommendation; **planned** job-post recommendation.
 
 **My role** — Sole AI developer on the team: designed and built the entire ML pipeline single-handedly — embedding extraction, clustering, inference server, user-affinity module, and production deployment.
 
 - Extracted **CLIP ViT-L/14** embeddings from **~430K** images → **K-Means (K=500)** on L2-normalized 768-D vectors; chose K-Means over DBSCAN/HDBSCAN after analyzing failure modes on high-dimensional embeddings
 - Real-time inference at **~13ms/image (~78.8 img/s, GPU)** via cosine-distance centroid matching
 - Behavior-weighted user affinity module (view/like/comment/scrap), deployed with **FastAPI**
-- **Feed recommender (Oct–Nov 2026, offline-validated):** benchmarked 4 embedding models (CLIP ± PCA, **SigLIP 2**, DINOv2) on ~430K feeds and moved to SigLIP 2 · K=1000; trained a **LightGBM** user × cluster model on contact data that predicts where each user's next contacts will come from
-- In time-split evaluation, recommended feeds contain **1.08 vs 0.76** actual future contacts per 500 compared with the app's current latest-first feed (**+42%**, paired bootstrap 95% CI above 0); top-50 clusters capture **30.1%** of future contacts
+- **Feed recommender (Oct–Nov 2026; offline-validated, not deployed):** benchmarked CLIP with/without PCA, **SigLIP 2**, and DINOv2 on ~430K feeds; developed a SigLIP 2 · K=1000 + **LightGBM** user × cluster recommender using contact data.
+- **Offline time-split evaluation (not a live A/B test):** proposed top-500 feed lists covered **1.08 vs 0.76** observed future contacts per user compared with the latest-first baseline (**+42%**, paired bootstrap 95% CI above 0); top-50 clusters captured **30.1%**. This is **not** a measured live conversion uplift.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
@@ -93,14 +101,14 @@ A service that recognizes bulky household waste from a camera in real time and a
 
 - **YOLOv8n** (imgsz=800, 300 epochs) → **mAP@50 98.1% · mAP@50-95 93.2%**
 - Built the full data pipeline on the NIA dataset: JSON→YOLO label conversion, polygon/box parsing, multi-class augmentation (albumentations)
-- Designed an end-to-end service prototype with automated fee calculation
+- Designed a fee-calculation service prototype; researched Gwangjin-gu's workflow, proposed a **QR-based mobile receipt and staff dashboard**, and received positive feedback from the district office (**proposal, not municipal deployment**).
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![YOLOv8](https://img.shields.io/badge/YOLOv8-00FFFF?style=flat-square&logo=yolo&logoColor=black)
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)
 
-**[Details →](projects/trash-is-yolo.md)**
+**[Details →](projects/trash-is-yolo.md)** · [Code & competition materials](https://github.com/Ssopaa/Trash_Yolo) · [Inference API prototype](https://github.com/Ssopaa/trashyolowa)
 
 </td></tr>
 </table>
@@ -195,7 +203,7 @@ The official portal of Konkuk University's Student Welfare Committee, digitalizi
 ![Vercel](https://img.shields.io/badge/Vercel-000000?style=flat-square&logo=vercel&logoColor=white)
 &nbsp;
 [![Live](https://img.shields.io/badge/Live-ku--welfare--web.vercel.app-000000?style=flat-square&logo=vercel)](https://ku-welfare-web.vercel.app/)
-[![Repo](https://img.shields.io/badge/GitHub-Repository-181717?style=flat-square&logo=github)](https://github.com/41-Welfare-Web)
+[![Repo](https://img.shields.io/badge/GitHub-Frontend_Source-181717?style=flat-square&logo=github)](https://github.com/41-Welfare-Web/KU_WelfareWeb_FrontEnd)
 
 **[Details →](projects/ku-welfare-web.md)**
 
@@ -277,7 +285,7 @@ Resource allocation for D2D wireless networks. Frequency-allocation comparison o
 
 `Neuromorphic · SNN`
 
-A spiking network that learns a digit → letter association purely through **spike-timing-dependent plasticity (STDP)** — LIF neurons + step-conductance synapses, taught with nontarget inhibition, recalling the letter from the digit alone. A closed-form contrastive-optimal-weight solver serves as the reference baseline.
+A digit → letter association network using **STDP**, LIF neurons, and conductance synapses, with a closed-form reference baseline. Stepwise spike/weight diagnostics exposed a **silent floating-point timing-boundary bug**, verified with pair-specific logs and digit-only recall.
 
 ![Python](https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white)
 ![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white)

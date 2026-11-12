@@ -1,21 +1,23 @@
 # INPOSE — AI-Driven Matching & CRM System
 
 > Capstone project (Mar 2026 – Dec 2026) · **Team — sole AI developer** · Live service: [inpose.co](https://inpose.co/)
-> Production ML pipeline for semantic feed clustering and behavior-based recommendation.
+> Deployed image clustering and user-affinity pipeline; feed recommendation evaluated offline, pending integration.
 
 ## Overview
 
-INPOSE is the AI CRM behind the live social-matching service [*Inpose*](https://inpose.co/). The feed contains hundreds of thousands of user-posted images with no semantic labels. INPOSE automatically groups them into meaningful clusters by **visual semantics** (style, subject, composition), then learns each user's interaction history to model their taste.
+INPOSE is an AI/ML system for [*Inpose*](https://inpose.co/). Its **deployed core** clusters unlabeled feed images by **visual semantics** (style, subject, composition), assigns new images to clusters, and maps interactions to user preferences. The newer **feed recommender was evaluated offline and has not yet been integrated into the live feed**.
 
 The **end goal** is personalized recommendation on two surfaces: **job/recruitment posts** and the **image feed** — surfacing the postings and feeds that best match each user's inferred preferences.
 
-The system has two halves:
-1. **A clustering pipeline** that turns raw images into a fixed set of semantic clusters.
-2. **A real-time inference + recommendation server** that assigns new images to clusters and computes per-user preference.
+The **deployed** system includes:
+1. **Image clustering** to form semantic groups.
+2. **Real-time inference and user-affinity mapping** for cluster assignment and user preferences.
+
+The personalized feed recommendation layer is a **separate offline-validated component**.
 
 ### Status & roadmap
 
-The core ML system — semantic feed clustering, real-time inference, and user–cluster preference mapping — is **built and running in production**. In Oct–Nov 2026 I built the **feed recommendation layer** on top of it; it is validated offline and waiting to be wired into the service. Job-post recommendation is the next milestone.
+Semantic clustering, real-time inference, and user–cluster preference mapping are **deployed**. The Oct–Nov 2026 feed recommender is **offline-validated, but not yet integrated, deployed, or A/B-tested**. Job-post recommendation is planned.
 
 | Component | Status |
 |-----------|--------|
@@ -80,7 +82,7 @@ Aggregates each user's `view / like / comment / scrap` interactions per cluster,
 Goal: show each user the feeds they are most likely to **contact** the creator of — not just the ones they look at. The app currently shows a plain latest-first feed, so the recommender has to beat that.
 
 ### 1. Rebuilding the cluster foundation
-- **Embedding benchmark** — extracted ~430K feeds with four models (CLIP ViT-L/14 with and without PCA, **SigLIP 2 SO400M**, DINOv2 ViT-L/14). The production model compressed embeddings to 50D with PCA, losing the fine detail (mood, face shape, styling) that matters for model photography. SigLIP 2 became the reference model.
+- **Embedding benchmark** — compared CLIP ViT-L/14 with/without PCA, **SigLIP 2 SO400M**, and DINOv2 ViT-L/14 on ~430K feeds. The currently deployed model was trained on 50D PCA-reduced vectors, which loses visual detail; the pipeline now trains K-Means directly on normalized 768D vectors. SigLIP 2 was selected for the **offline recommender experiments**, not the deployed service.
 - **K = 100 / 500 / 1000** — K=500 looked better at equal cluster count, but at an equal *fraction* of clusters the gap was not significant (28.2% vs 27.3%, 95% CI −2.4 ~ +0.6%p); the difference came from bigger clusters. Chose the finer **K=1000**.
 - **Batch assignment for new feeds** — the upload-time assignment server had stopped, leaving ~250–300 new feeds/day unclustered. Wrote a batch job reusing the exact production assignment code.
 - **Image cost** — routed all image loads through the CDN instead of the raw object store; downloading ~2.7K new feeds (~4.5 GB) cost about $0.50.
@@ -106,8 +108,8 @@ Findings from a contact-analysis dashboard (~40K first contacts):
 
 The most important feature was *the share of contacts users of the same role sent to that cluster* (30% importance), so per-role models were unnecessary. A hand-tuned tendency rule (explore vs. exploit by user type) was also built and calibrated, then retired once the model matched it without hand-set numbers.
 
-### 4. Evaluation
-All comparisons use a **time split** (predict from data before a cutoff, score on real contacts after it) with **paired bootstrap 95% CIs**. The current app is latest-first, so the ground truth is biased *toward* latest-first.
+### 4. Offline evaluation — not a production uplift
+All comparisons use **retrospective time splits** (fit from data before a cutoff, score on later observed contacts) and **paired bootstrap 95% CIs**. They measure **future-contact coverage of proposed feed lists**, not the causal effect of deployment on conversion. Historical contacts also reflect exposure under the current latest-first feed, so interpretation is limited by exposure bias.
 
 **Cluster prediction vs. latest-first** (10/1 → 10/30, ~1.5K users)
 
@@ -128,7 +130,7 @@ All comparisons use a **time split** (predict from data before a cutoff, score o
 | Current app (latest-first) | 0.30 | 0.76 | — |
 | Latest-first + same exclusions | 0.33 | 0.88 | — |
 
-Taste-ranking inside clusters kept surfacing old popular feeds; switching to latest-first fixed that and beat the current app by **+0.32 contacts per user (+42%)**. It also beat latest-first with identical exclusion rules (+0.20), isolating the effect of the model's cluster mix.
+Taste-ranking inside clusters repeatedly surfaced older popular feeds. Latest-first ordering within model-selected clusters improved **offline coverage** to 1.08 versus 0.76 future contacts per user in top-500 lists (**+0.32, +42%**), and versus 0.88 for latest-first with matching exclusion rules (**+0.20**). **These are offline list comparisons, not a measured increase in production contacts or conversion.**
 
 **Tried and rejected:** reserving 20–40% of slots for unseen clusters (no gain / worse), 30 or 100 clusters instead of 50 (worse / not significant).
 

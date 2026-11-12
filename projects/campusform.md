@@ -2,7 +2,7 @@
 
 > Sep 2025 – Feb 2026 · **Frontend** · Team · 🏆 Excellence Award — 2nd place (Kuit 6th Demoday 2026)
 
-### 🔗 Live Service — **[web.campusform.kro.kr](https://web.campusform.kro.kr/)** · [Repository](https://github.com/Konkuk-KUIT/CAMPUSFORM-Web)
+### 🔗 Live Service — **[web.campusform.kro.kr](https://web.campusform.kro.kr/)** · [Frontend source](https://github.com/Konkuk-KUIT/CAMPUSFORM-Web) · [Smart scheduling code](https://github.com/Konkuk-KUIT/CAMPUSFORM-Web/tree/develop/src/app/smart-schedule)
 
 ## Overview
 

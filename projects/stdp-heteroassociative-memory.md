@@ -34,6 +34,16 @@ To gauge how close the spiking model gets to the best possible linear solution, 
 
 Per-pair diagnostics logged to JSON — exact-match rate, bit accuracy, MSE, cosine similarity, and predicted-vs-target 5×3 grids.
 
+### Debugging case — silent STDP weight-update failure
+
+I added **step-by-step visualizations** of input spikes, neuron firing, and the synaptic weight matrix to verify model behavior beyond source-code review. In a **three-pair debugging experiment**, the third pair fired normally but its weights did not update. The other two pairs learned and no warnings were raised, so final accuracy alone would have obscured the cause.
+
+**Normal firing but missing weight updates** narrowed the investigation to the training-window check rather than the LIF model. With `dt = 1 µs`, reconstructing a training-window start time of `0.017 s` yielded `0.016999… s`, just below the `time >= start` boundary. The affected step was marked inactive, preventing spike-index extraction and the expected downstream update.
+
+I corrected the boundary comparison with **`epsilon = dt / 2`**, checked per-pair logging, and verified recall of the corresponding letter from a digit-only input. The lesson was to **instrument the learning process and validate intermediate dynamics**, not rely solely on source review and aggregate accuracy.
+
+*This three-pair diagnostic run is distinct from the full ten-pair associative-memory model.*
+
 ## My role
 
 Designed and implemented the project end-to-end — the dataset, the STDP spiking engine (LIF + synapse + plasticity + training/recall), and the closed-form baseline for comparison.
