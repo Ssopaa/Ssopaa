@@ -85,9 +85,9 @@ An AI CRM built into the live social-matching service [**Inpose**](https://inpos
 <table width="100%">
 <tr><td width="850">
 
-`Grand Prize ×2` · `Team Lead`
+`Grand Prize` · `Excellence Award` · `Team Lead`
 
-A service that recognizes bulky household waste from a camera in real time and automatically calculates the disposal fee per item. Won top prize at two competitions.
+A service that recognizes bulky household waste from a camera in real time and automatically calculates the disposal fee per item. Won a Grand Prize and an Excellence Award at two competitions.
 
 **My role** — Team lead (4-person team). Owned the full codebase end-to-end and led the research report — from data pipeline to model training, evaluation, and the service prototype.
 

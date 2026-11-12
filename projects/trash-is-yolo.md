@@ -1,13 +1,13 @@
 # Trash is YOLO — AI Bulky Waste Management System
 
-> 2025 · **Team of 4 — Team Lead** · 🏆 Grand Prize ×2
+> 2025 · **Team of 4 — Team Lead** · 🏆 Grand Prize + Excellence Award
 > Real-time bulky-waste detection with automated disposal-fee calculation.
 
 ## Overview
 
 Disposing of bulky household waste in Korea requires manually identifying the item, looking up its fee, and buying a sticker — a slow, error-prone process. Trash is YOLO replaces it with a camera-based AI: point at the item, the model detects it in real time, and the service automatically computes the disposal fee.
 
-Won **two Grand Prizes** — RISE AI-LivingLab Challenge 2025 and the 誠信義 AI Academic Competition 2025.
+Won the **Grand Prize** at the RISE AI-LivingLab Challenge 2025 and the **Excellence Award** (誠 category) at the 誠信義 AI Academic Competition 2025.
 
 ## Architecture
 
