@@ -35,7 +35,7 @@ The core ML system — semantic feed clustering, real-time inference, and user�
 flowchart LR
     A[MySQL<br/>feed images] --> B[async download<br/>aiohttp]
     B --> C[CLIP ViT-L/14<br/>encode_image]
-    C --> D[embeddings<br/>384,761 × 768]
+    C --> D[embeddings<br/>~385K × 768]
     D --> E[L2 normalize]
     E --> F[PCA<br/>768D → 50D]
     F --> G[K-Means<br/>K=500]
@@ -61,11 +61,11 @@ The CLIP model (~2.4s init) and centroids are loaded once at server start and re
 - **K=500 chosen by qualitative evaluation** — standard metrics (silhouette, Davies-Bouldin) favored K≈10, which lumped ~40K images per cluster and destroyed the goal of fine-grained grouping. I instead compared K=300/500/700 on visual/semantic coherence within clusters and selected K=500 as the best balance.
 - **Centroids stored in original 768-dim** — inference needs no PCA model, just `centroids.npy`, minimizing deployment dependencies.
 
-## Results
+## Results (v1, Jun 2026)
 
 | Metric | Value |
 |--------|-------|
-| Training images | 384,761 |
+| Training images | ~385K (now ~426K feeds in the recommender work) |
 | Embedding dim | 768 (CLIP ViT-L/14) |
 | Clusters | 500 |
 | End-to-end inference | **~13 ms/image** |
