@@ -35,7 +35,7 @@ The core ML system — semantic feed clustering, real-time inference, and user�
 flowchart LR
     A[MySQL<br/>feed images] --> B[async download<br/>aiohttp]
     B --> C[CLIP ViT-L/14<br/>encode_image]
-    C --> D[embeddings<br/>425,933 × 768]
+    C --> D[embeddings<br/>~430K × 768]
     D --> E[L2 normalize]
     E --> G[K-Means<br/>K=500]
     G --> H[centroids<br/>500 × 768]
@@ -64,7 +64,7 @@ The CLIP model (~2.4s init) and centroids are loaded once at server start and re
 
 | Metric | Value |
 |--------|-------|
-| Training images | 425,933 |
+| Training images | ~430K |
 | Embedding dim | 768 (CLIP ViT-L/14) |
 | Clusters | 500 |
 | End-to-end inference | **~13 ms/image** |
@@ -80,7 +80,7 @@ Aggregates each user's `view / like / comment / scrap` interactions per cluster,
 Goal: show each user the feeds they are most likely to **contact** the creator of — not just the ones they look at. The app currently shows a plain latest-first feed, so the recommender has to beat that.
 
 ### 1. Rebuilding the cluster foundation
-- **Embedding benchmark** — extracted 425,933 feeds with four models (CLIP ViT-L/14 with and without PCA, **SigLIP 2 SO400M**, DINOv2 ViT-L/14). The production model compressed embeddings to 50D with PCA, losing the fine detail (mood, face shape, styling) that matters for model photography. SigLIP 2 became the reference model.
+- **Embedding benchmark** — extracted ~430K feeds with four models (CLIP ViT-L/14 with and without PCA, **SigLIP 2 SO400M**, DINOv2 ViT-L/14). The production model compressed embeddings to 50D with PCA, losing the fine detail (mood, face shape, styling) that matters for model photography. SigLIP 2 became the reference model.
 - **K = 100 / 500 / 1000** — K=500 looked better at equal cluster count, but at an equal *fraction* of clusters the gap was not significant (28.2% vs 27.3%, 95% CI −2.4 ~ +0.6%p); the difference came from bigger clusters. Chose the finer **K=1000**.
 - **Batch assignment for new feeds** — the upload-time assignment server had stopped, leaving ~250–300 new feeds/day unclustered. Wrote a batch job reusing the exact production assignment code.
 - **Image cost** — routed all image loads through the CDN instead of the raw object store; downloading ~2.7K new feeds (~4.5 GB) cost about $0.50.
